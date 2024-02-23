@@ -31,7 +31,7 @@ const fujiAcres = [2, 3, 3, 2, 2, 2, 1]
 const galaAcres = [5, 2, 4, 3, 6, 2, 4]
 const pinkAcres = [1, 5, 4, 2, 1, 5, 4]
 
-const fujiPrice = .89 
+const fujiPrice = .89
 const galaPrice = .64
 const pinkPrice = .55
 
@@ -54,7 +54,7 @@ const pinkPrice = .55
 let totalAcres = 0
 
 for (let i = 0; i < 7; i++) {
-   totalAcres = totalAcres + fujiAcres[i] + galaAcres[i] + pinkAcres[i]
+    totalAcres = totalAcres + fujiAcres[i] + galaAcres[i] + pinkAcres[i]
 }
 console.log('Total acres picked:', totalAcres)
 
@@ -110,42 +110,55 @@ console.log(averageDailyAcres)
 
 */
 
-let acresLeft = 174 
+let acresLeft = 174
 let days = 0
 
 // CODE HERE
 
+while (days > 0) {
+    acresLeft -= averageDailyAcres
+    days++;
+}
+console.log(days)
 
 
 // PROBLEM 4
 
 /*
     Your next task is to create 3 arrays
-    that list the daily amount of apples 
-    picked, in tons, for each variety. 
-    
+    that list the daily amount of apples
+    picked, in tons, for each variety.
+
     Each acre yields 6.5 tons of apples.
 
-    Use the variables below to store 
+    Use the variables below to store
     your new arrays. Make sure that you
-    don't modify the original arrays 
+    don't modify the original arrays
     on lines 36 - 38.
 
     Log each of your arrays to the console.
 
-    Hint: you can use the slice method 
-    to make copies of the arrays and 
+    Hint: you can use the slice method
+    to make copies of the arrays and
     then loop the copies. You could also
     make empty arrays, loop the old ones
-    and use the push method to add new 
+    and use the push method to add new
     values to the new arrays.
 */
 
 // CODE HERE
 
-// let fujiTons =
-// let galaTons =
-// let pinkTons =
+let fujiTons = fujiAcres.slice()
+console.log(fujiTons) // confirm new array
+
+for (let i = 0; i < fujiTons.length; i++) {
+    fujiTons = fujiTons[i] * 6.5
+}
+console.log(fujiTons)
+
+let galaTons = galaAcres.slice()
+
+let pinkTons = pinkAcres.slice()
 
 
 
@@ -155,13 +168,13 @@ let days = 0
 // PROBLEM 5
 
 /*
-    Next, calculate the total number of 
+    Next, calculate the total number of
     pounds picked per variety.
 
     You'll need to add up the tons per
-    each variety and convert the number 
+    each variety and convert the number
     into pounds -- store that number in
-    the variables given below. 
+    the variables given below.
 
     Log each of the values to the console.
 
@@ -183,16 +196,16 @@ let days = 0
 
 /*
     Now that you know the total pounds
-    per variety, use the prices given 
-    at the beginning of this file to 
-    figure out how much you'll make 
-    from selling each type of apple. 
+    per variety, use the prices given
+    at the beginning of this file to
+    figure out how much you'll make
+    from selling each type of apple.
 
-    The prices are per pound and are 
-    written in cents. 
+    The prices are per pound and are
+    written in cents.
 
-    Log each of the profits to the 
-    console. 
+    Log each of the profits to the
+    console.
 */
 
 // CODE HERE
@@ -209,8 +222,8 @@ let days = 0
 // PROBLEM 7
 
 /*
-    Add up all your profits and save 
-    the number to a variable called 
+    Add up all your profits and save
+    the number to a variable called
     `totalProfit`.
 
     Log `totalProfit` to the console.
