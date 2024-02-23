@@ -12,6 +12,12 @@
 // Testing & Integration
 // Planning
 
+// Planning
+// Analysis of Requirements
+// Design
+// Implentation
+// Testing & Integration
+// Maintain
 
 //////////////////PROBLEM 2////////////////////
 /*
