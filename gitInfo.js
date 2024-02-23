@@ -10,6 +10,7 @@
 */
 
 //CODE HERE
+let gitDefinition = "Git creates a repository on our local drive that allows us to initialize projects and track and manage changes as we program."
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -19,6 +20,8 @@
 
 //CODE HERE
 
+let gitHubDefinition = "Github is an online platform that allows us to create remote repositories to manage projects."
+
 //////////////////PROBLEM 3////////////////////
 /*
     Create a variable called 'gitInitDefinition'.  
@@ -26,6 +29,8 @@
 */
 
 //CODE HERE
+
+let gitInitDefinition = "The git init command initializes a new project and gets it ready to track changes."
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -35,6 +40,8 @@
 
 //CODE HERE
 
+let gitCloneDefinition = "The git clone command will create a copy of an existing project."
+
 //////////////////PROBLEM 5////////////////////
 /*
     Create a variable called 'gitStatusDefinition'.  
@@ -42,6 +49,8 @@
 */
 
 //CODE HERE
+
+let gitStatusDefinition = "Git Status will inform of the projects current status, if changes have or haven't been made and when it has been last modified."
 
 //////////////////PROBLEM 6////////////////////
 /*
