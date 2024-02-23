@@ -63,6 +63,10 @@ let gitStatusDefinition = "Git Status will inform of the projects current status
 
 //CODE HERE
 
+let gitAddDefinition = "This adds a change of the specified file in the current working directory."
+
+let gitAddCode = "git add ."
+
 //////////////////PROBLEM 7////////////////////
 /*
     Create a variable called 'gitCommitDefinition'.  
@@ -74,6 +78,9 @@ let gitStatusDefinition = "Git Status will inform of the projects current status
 
 //CODE HERE
 
+let gitCommitDefinition = "The git commit commit changes to the current file to the git repository."
+
+let gitCommitCode = "git commit -m"
 
 //////////////////PROBLEM 8////////////////////
 /*
@@ -82,3 +89,5 @@ let gitStatusDefinition = "Git Status will inform of the projects current status
 */
 
 //CODE HERE
+
+let gitPushDefinition = "Using the git push will push changes from the specified file to the remote repository."
