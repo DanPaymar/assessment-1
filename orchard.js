@@ -115,11 +115,11 @@ let days = 0
 
 // CODE HERE
 
-while (days > 0) {
+while (acresLeft > 0) {
+    console.log('Days left:', days)
     acresLeft -= averageDailyAcres
-    days++;
+    days++
 }
-console.log(days)
 
 
 // PROBLEM 4
@@ -159,10 +159,6 @@ console.log(fujiTons)
 let galaTons = galaAcres.slice()
 
 let pinkTons = pinkAcres.slice()
-
-
-
-
 
 
 // PROBLEM 5
