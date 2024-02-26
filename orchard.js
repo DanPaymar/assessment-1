@@ -51,7 +51,9 @@ const pinkPrice = .55
 
 // CODE HERE
 
-let totalAcres = 0
+// create the variable totalAcres and set it's value to 0
+let totalAcres = 0 
+
 
 for (let i = 0; i < 7; i++) {
     totalAcres = totalAcres + fujiAcres[i] + galaAcres[i] + pinkAcres[i]
@@ -77,8 +79,8 @@ console.log('Total acres picked:', totalAcres)
 let averageDailyAcres = 0
 
 
-averageDailyAcres = totalAcres / 7
-console.log(averageDailyAcres)
+averageDailyAcres = totalAcres / 7 // take averageDailyAcres and change its value to totalAcres / 7
+console.log(averageDailyAcres) // show the average daily acres in the console
 
 
 // PROBLEM 3
@@ -115,9 +117,10 @@ let days = 0
 
 // CODE HERE
 
-while (acresLeft > 0) {
-    console.log('Days left:', days)
+while (acresLeft > 0) { 
     acresLeft -= averageDailyAcres
+    console.log('Days left:', days)
+
     days++
 }
 
@@ -148,18 +151,36 @@ while (acresLeft > 0) {
 
 // CODE HERE
 
+// declare a new variable and assign it a copy of fuji acre array
 let fujiTons = fujiAcres.slice()
 console.log(fujiTons) // confirm new array
 
+// loop over the length of fuji ton array
 for (let i = 0; i < fujiTons.length; i++) {
-    fujiTons = fujiTons[i] * 6.5
+    if (fujiTons[i]) {
+         // at each position multiply by 6.5
+       fujiTons[i] *= 6.5
+    }
+    console.log('Daily amount:', fujiTons)
 }
-console.log(fujiTons)
 
 let galaTons = galaAcres.slice()
 
+for (let i = 0; i < galaTons.length; i++) {
+    if (galaTons[i]) {
+        galaTons[i] *= 6.5
+    }
+    console.log('Daily gala amount:', galaTons)
+}
+
 let pinkTons = pinkAcres.slice()
 
+for (let i = 0; i < pinkTons.length; i++) {
+    if (pinkTons[i]) {
+        pinkTons[i] *= 6.5
+    }
+    console.log('Daily pink amount:', pinkTons)
+}
 
 // PROBLEM 5
 
