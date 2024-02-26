@@ -202,9 +202,9 @@ for (let i = 0; i < pinkTons.length; i++) {
 
 // make a copy of fujiTons and assign it to a new variable fujiPounds
 let fujiPounds = fujiTons.slice()
-// declare a total and set it to value of 0
+// declare a total and set it to value of 0. Declare fuji conversation to hold the total in pounds.
 let total = 0
-
+let fujiConverstion = 0
 // loop over the length of the fuji pound array
 for (let i = 0; i < fujiPounds.length; i++) {
     // for each iteration multiply by 2000
@@ -212,7 +212,7 @@ for (let i = 0; i < fujiPounds.length; i++) {
         fujiPounds[i] *= 2000
     }
     // add each iteration of the array as it is multiplied
-    total += fujiPounds[i]
+    fujiConverstion = total += fujiPounds[i]
 
 }
 // log the total amount in pounds
@@ -220,23 +220,25 @@ console.log('Total fuji pounds:', total)
 
 // copy galtons to gala pounds
 let galaPounds = galaTons.slice()
+let galaConverstion = 0
 
 for (let i = 0; i < galaPounds.length; i++) {
     if (galaPounds) {
         galaPounds[i] *= 2000
     }
-    total += galaPounds[i]
+    galaConverstion = total += galaPounds[i]
 }
 console.log('Total gala pounds:', total)
 
 // copy pink tons to pink pounds
 let pinkPounds = pinkTons.slice()
+let pinkConverstion = 0
 
 for (let i = 0; i < pinkPounds.length; i++) {
     if (pinkPounds) {
         pinkPounds[i] *= 2000
     }
-    total += pinkPounds[i]
+    pinkConverstion = total += pinkPounds[i]
 }
 console.log('Toal pink pounds:', total)
 
@@ -261,9 +263,18 @@ console.log('Toal pink pounds:', total)
 
 // CODE HERE
 
-// let fujiProfit =
-// let galaProfit =
-// let pinkProfit =
+// const fujiPrice = .89
+// const galaPrice = .64
+// const pinkPrice = .55
+
+let fujiProfit = fujiPrice * fujiConverstion
+console.log('Fuji profit:',`\$${fujiProfit}`)
+
+let galaProfit = galaPrice * galaConverstion
+console.log('Gala profit:', `$${galaConverstion}`)
+
+let pinkProfit = pinkPrice * pinkConverstion
+console.log('Pink profit:', `$${pinkConverstion}`)
 
 
 
@@ -281,3 +292,4 @@ console.log('Toal pink pounds:', total)
 */
 
 // CODE HERE
+
