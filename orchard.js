@@ -117,11 +117,12 @@ let days = 0
 
 // CODE HERE
 
-while (acresLeft > 0) { 
-    acresLeft -= averageDailyAcres
-    console.log('Days left:', days)
 
-    days++
+while (acresLeft > 0) { // loop acresLeft as long as it is greater than 0
+    acresLeft -= averageDailyAcres // subtract acres left by average daily acres each time the loop runs
+    console.log('Days left:', days) // log the number of days left
+
+    days++ // increment days variable
 }
 
 
@@ -244,7 +245,6 @@ console.log('Toal pink pounds:', total)
 
 
 
-
 // PROBLEM 6
 
 /*
@@ -271,14 +271,10 @@ let fujiProfit = fujiPrice * fujiConverstion
 console.log('Fuji profit:',`\$${fujiProfit}`)
 
 let galaProfit = galaPrice * galaConverstion
-console.log('Gala profit:', `$${galaConverstion}`)
+console.log('Gala profit:', `$${galaProfit}`)
 
 let pinkProfit = pinkPrice * pinkConverstion
-console.log('Pink profit:', `$${pinkConverstion}`)
-
-
-
-
+console.log('Pink profit:', `$${pinkProfit}`)
 
 
 // PROBLEM 7
@@ -292,4 +288,10 @@ console.log('Pink profit:', `$${pinkConverstion}`)
 */
 
 // CODE HERE
+
+let totalProfit = fujiProfit + galaProfit + pinkProfit
+
+    console.log(`Total profit: $${totalProfit}`)
+
+
 
