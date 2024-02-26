@@ -200,11 +200,45 @@ for (let i = 0; i < pinkTons.length; i++) {
 
 // CODE HERE 
 
-// let fujiPounds =
-// let galaPounds =
-// let pinkPounds =
+// make a copy of fujiTons and assign it to a new variable fujiPounds
+let fujiPounds = fujiTons.slice()
+// declare a total and set it to value of 0
+let total = 0
 
+// loop over the length of the fuji pound array
+for (let i = 0; i < fujiPounds.length; i++) {
+    // for each iteration multiply by 2000
+    if (fujiPounds) {
+        fujiPounds[i] *= 2000
+    }
+    // add each iteration of the array as it is multiplied
+    total += fujiPounds[i]
 
+}
+// log the total amount in pounds
+console.log('Total fuji pounds:', total)
+
+// copy galtons to gala pounds
+let galaPounds = galaTons.slice()
+
+for (let i = 0; i < galaPounds.length; i++) {
+    if (galaPounds) {
+        galaPounds[i] *= 2000
+    }
+    total += galaPounds[i]
+}
+console.log('Total gala pounds:', total)
+
+// copy pink tons to pink pounds
+let pinkPounds = pinkTons.slice()
+
+for (let i = 0; i < pinkPounds.length; i++) {
+    if (pinkPounds) {
+        pinkPounds[i] *= 2000
+    }
+    total += pinkPounds[i]
+}
+console.log('Toal pink pounds:', total)
 
 
 
